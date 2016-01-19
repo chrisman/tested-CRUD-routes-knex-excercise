@@ -20,35 +20,35 @@ describe('Movies CRUD Routes', function() {
       done();
     });
   });
-  xit('should POST to /movies', function (done) {
+  it('should POST to /movies', function (done) {
     chai.request(server).post('/movies')
     .end(function (err, res) {
       res.should.have.status(200);
       done();
     });
   });
-  xit('should GET /movies/:id', function (done) {
+  it('should GET /movies/:id', function (done) {
     chai.request(server).get('/movies/2')
     .end(function (err, res) {
       res.should.have.status(200);
       done();
     });
   });
-  xit('should GET /movies/2/edit', function (done) {
+  it('should GET /movies/2/edit', function (done) {
     chai.request(server).get('/movies/2/edit')
     .end(function (err, res) {
       res.should.have.status(200);
       done();
     });
   });
-  xit('should POST /movies/:id', function (done) {
+  it('should POST /movies/:id', function (done) {
     chai.request(server).post('/movies/2')
     .end(function (err, res) {
       res.should.have.status(200);
       done();
     });
   });
-  xit('should POST /movies/:id/delete', function (done) {
+  it('should POST /movies/:id/delete', function (done) {
     chai.request(server).post('/movies/2/delete')
     .end(function (err, res) {
       res.should.have.status(200);
