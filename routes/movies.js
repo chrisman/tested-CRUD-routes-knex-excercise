@@ -5,6 +5,10 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
   res.render('movies/index');
-})
+});
+
+router.get('/new', function(req, res, next){
+  res.render('movies/new');
+});
 
 module.exports = router;
